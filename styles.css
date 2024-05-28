@@ -22,7 +22,7 @@
 
 .character img{
     width: 100%;
-    display: block; cuando no agarra el width
+    display: block; /*cuando no agarra el width*/
     height: 400px;
     object-fit: cover;
 }
