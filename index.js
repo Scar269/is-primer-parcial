@@ -1,7 +1,4 @@
 const container = document.querySelector("#container") //acceder a un selector html para guardarlo en una variable
-//container.innerHTML = "" (para borrar el contenido de la variable)
-//container.style.backgroundColor='red' (cambiar el css)
-
 const url = "https://rickandmortyapi.com/api"
 
 fetch(url + "/character")//consulta informacion
@@ -9,7 +6,9 @@ fetch(url + "/character")//consulta informacion
 .then(json => {
     const characters = json.results
     characters.forEach(character => {
-        const characterTemplate = `<div class="character">
+        const characterTemplate = 
+            `<div class="character">
+            <a href="character.html?id=${character.id}">
             <img src="${character.image}" alt="">
             <div class="character-detail">
                 <h1>${character.name}</h1>
@@ -18,6 +17,8 @@ fetch(url + "/character")//consulta informacion
                 <p>${character.location.name}</p>
                 <p>First seen in:</p>
                 <p>${character.origin.name}</p>
+                </div>
+            </a>
             </div>`
         container.innerHTML += characterTemplate
     })
