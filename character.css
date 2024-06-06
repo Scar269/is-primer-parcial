@@ -1,33 +1,57 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-*{
+body {
+    background-color: #272B33; /* Fondo negro */
+    font-family: "Roboto", sans-serif;
     margin: 0;
     padding: 0;
-    font-family: "Roboto", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 630px;/*altura, centrar vertical la card*/
+    color: #FFFFEE; /* Texto blanco */
 }
 
 #characterContainer {
-    background: #272B33;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #character {
-    background: #3C3E44;
-    margin-bottom: 35px;
-    border-radius: 8px;
-    box-shadow: 1px 1px 5px #CCCC;
+    background-color: #3C3E44; /* Fondo rojo para la tarjeta */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Sombras */
+    border-radius: 10px;
+    text-align: center;
 }
 
-#character img{
-    width: 100%;
-    display: block; /*cuando no agarra el width*/
-    height: 400px;
-    object-fit: cover;
+img {
+    height: auto;
+    border-radius: 10px 10px 0 0;/*borde de arriba circular para la card*/
 }
 
-.character-detail {
-    padding: 15px;
+.detail h1 {
+    font-size: 24px;
+    margin: 10px 0;
+}
 
+.detail h2 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.detail p {
+    font-size: 16px;
+    margin: 5px 0;
+    margin-bottom: 8px;
+}
+
+.gray {
+    color: #8C9891;
+}
+
+
+
+.yellow:hover{
+    color: #FF9800;
 }
