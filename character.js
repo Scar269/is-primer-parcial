@@ -13,9 +13,11 @@ fetch(urlAPI + "/character/" + id)//consulta informacion
                     <h1 class="yellow">${character.name}</h1>
                     <h2>${character.status} - ${character.species}</h2>
                     <p class="gray">Last known location:</p>
-                    <p class="yellow">${character.origin.name}</p>
+                    <a href="locations.html?id=${character.id}">
+                    <p class="yellow">${character.origin.name}</p></a>
                     <p class="gray">First seen in:</p>
-                    <p class="yellow">${character.location.name}</p>
+                    <a href="locations.html?id=${character.id}">
+                    <p class="yellow">${character.location.name}</p></a>
                 </div>
             </div>`
         characterContainer.innerHTML += characterTemplate

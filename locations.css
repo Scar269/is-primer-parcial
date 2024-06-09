@@ -12,23 +12,19 @@ body {
     color: #FFFFEE; /* Texto blanco */
 }
 
-#characterContainer {
+#locationContainer {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#character {
-    background-color: #3C3E44; /* Fondo rojo para la tarjeta */
+#location {
+    background-color: #3C3E44; /* Fondo para la tarjeta */
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Sombras */
     border-radius: 10px;
     text-align: center;
-    padding-bottom: 12px ;
-}
+    padding: 30px;
 
-img {
-    height: auto;
-    border-radius: 10px 10px 0 0;/*borde de arriba circular para la card*/
 }
 
 .detail h1 {
@@ -51,12 +47,40 @@ img {
     color: #8C9891;
 }
 
-a:-webkit-any-link {
+*:-webkit-any-link {
     color: #FFFFEE;
     cursor: pointer;
     text-decoration: none;
 }
 
-a:hover{
+.gray {
+    color: #8C9891;
+}
+
+h1:hover{
     color: #FF9800;
+}
+
+.yellow:hover{
+    color: #FF9800;
+}
+
+button {
+    margin-top: 12px;
+    background-color: transparent;
+    border: none;
+    border-radius: 10px;
+    color: #FFFFEE;
+    cursor: pointer;
+    font-size: 14px;
+    outline: none;
+    padding: 12px ;
+    text-align: center;
+}
+   
+button:hover {
+    color: #FFFFEE;
+    background-color: #1A1A1A;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Sombras */
+    transform: translateY(-2px);
 }

@@ -17,7 +17,7 @@
     background: #3C3E44;
     margin-bottom: 35px;
     border-radius: 8px;
-    box-shadow: 1px 1px 5px #CCCC;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Sombras */
 }
 
 .character img{
@@ -30,4 +30,22 @@
 .character-detail {
     padding: 15px;
 
+}
+
+*:-webkit-any-link {
+    color: #FFFFEE;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.gray {
+    color: #8C9891;
+}
+
+h1:hover{
+    color: #FF9800;
+}
+
+.yellow:hover{
+    color: #FF9800;
 }
