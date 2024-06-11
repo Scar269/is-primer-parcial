@@ -1,50 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
 
-body {
-    background-color: #272B33; /* Fondo negro */
-    font-family: "Roboto", sans-serif;
+*{
+    font-family: "Roboto Slab", serif;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 630px;/*altura, centrar vertical la card*/
-    color: #FFFFEE; /* Texto blanco */
 }
 
-#locationContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#locationsContainer {
+    background: #272B33;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    color: #FFFFEE;
 }
 
-#location {
-    background-color: #3C3E44; /* Fondo para la tarjeta */
+.locations {
+    background: #3C3E44;
+    margin-bottom: 35px;
+    border-radius: 8px;
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Sombras */
-    border-radius: 10px;
-    text-align: center;
-    padding: 30px;
-
 }
 
-.detail h1 {
-    font-size: 24px;
-    margin: 10px 0;
-}
+.detail {
+    padding: 15px;
 
-.detail h2 {
-    font-size: 20px;
-    margin: 10px 0;
-}
-
-.detail p {
-    font-size: 16px;
-    margin: 5px 0;
-    margin-bottom: 8px;
-}
-
-.gray {
-    color: #8C9891;
 }
 
 *:-webkit-any-link {
@@ -65,22 +44,29 @@ h1:hover{
     color: #FF9800;
 }
 
-button {
-    margin-top: 12px;
-    background-color: transparent;
-    border: none;
-    border-radius: 10px;
-    color: #FFFFEE;
-    cursor: pointer;
-    font-size: 14px;
-    outline: none;
-    padding: 12px ;
-    text-align: center;
+header{
+    background: #272B33;
+    font-size: 18px;
 }
-   
-button:hover {
-    color: #FFFFEE;
-    background-color: #1A1A1A;
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Sombras */
-    transform: translateY(-2px);
+
+nav ul {
+    list-style: none;
+    display:flex;
+    padding-top: 26.5px;
+    padding-left: 320px;
+    padding-bottom: 14px;
+    gap: 400px;
+    float: center;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.inpage:hover {
+    color: #FF9800;
+}
+
+header:hover {
+    color: #FF9800;
 }
