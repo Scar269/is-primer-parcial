@@ -18,7 +18,7 @@ body {
 }
 
 #character {
-    background-color: #3C3E44; /* Fondo rojo para la tarjeta */
+    background-color: #3C3E44; /* Fondo para la tarjeta */
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Sombras */
     border-radius: 10px;
     text-align: center;

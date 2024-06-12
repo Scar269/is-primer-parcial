@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
 
-*{
+* {
     font-family: "Roboto Slab", serif;
     margin: 0;
     padding: 0;
+}
+
+body{
+    background-color: #272B33;
 }
 
 #locationsContainer {
@@ -12,18 +16,18 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     color: #FFFFEE;
+    padding: 20px;
 }
 
 .locations {
     background: #3C3E44;
     margin-bottom: 35px;
     border-radius: 8px;
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Sombras */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
 .detail {
     padding: 15px;
-
 }
 
 *:-webkit-any-link {
@@ -36,11 +40,11 @@
     color: #8C9891;
 }
 
-h1:hover{
+h1:hover {
     color: #FF9800;
 }
 
-.yellow:hover{
+.yellow:hover {
     color: #FF9800;
 }
 
@@ -58,7 +62,7 @@ nav ul {
     gap: 400px;
     float: center;
 }
-
+  
 nav a {
     text-decoration: none;
 }
@@ -69,4 +73,20 @@ nav a {
 
 header:hover {
     color: #FF9800;
+}
+
+#Mas {
+    display: block;
+    margin: 20px auto;
+    background-color: #FF9800;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #FFFFEE;
+    font-size: 16px;
+    box-shadow: 0 8px 12px rgb(25, 25, 25); /* Sombras */
+}
+
+#Mas:hover {
+    background-color: #e08900;
 }
